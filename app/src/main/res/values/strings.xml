@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Movie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title :</string>
+    <string name="vote_average">Vote Average :</string>
+    <string name="release_date">Release Date :</string>
+    <string name="overview">OverView</string>
+    <string name="add_to_favourites">Add To Favourites</string>
+</resources>

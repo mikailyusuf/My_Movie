@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/moviesFragment">
+
+    <fragment
+        android:id="@+id/favouriteMovies"
+        android:name="com.mikail.mymovie.ui.FavouriteMovies"
+        android:label="fragment_favourite_movies"
+        tools:layout="@layout/fragment_favourite_movies" >
+        <action
+            android:id="@+id/action_favouriteMovies_to_movieDetailsActivity"
+            app:destination="@id/movieDetailsActivity" />
+        <argument
+            android:name="movies"
+            app:argType="com.mikail.mymovie.model.Result" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.mikail.mymovie.ui.MoviesFragment"
+        android:label="fragment_movies"
+        tools:layout="@layout/fragment_movies" >
+        <action
+            android:id="@+id/action_moviesFragment_to_movieDetailsActivity"
+            app:destination="@id/movieDetailsActivity" />
+        <argument
+            android:name="movies"
+            app:argType="com.mikail.mymovie.model.Result" />
+    </fragment>
+    <activity
+        android:id="@+id/movieDetailsActivity"
+        android:name="com.mikail.mymovie.ui.MovieDetailsActivity"
+        android:label="activity_movie_details"
+        tools:layout="@layout/activity_movie_details" >
+        <argument
+            android:name="movies"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="com.mikail.mymovie.model.Result" />
+    </activity>
+</navigation>
