@@ -21,9 +21,9 @@ My Movie  an Android application based on  Dagger Hilt, Coroutines,Jetpack (Room
 - [Kotlin Serialization](https://github.com/Kotlin/kotlinx.serialization)
 
 ## Architecture
-NewsNow is based on MVVM architecture and a repository pattern.
+My Movie is based on MVVM architecture and a repository pattern.
 
 ![architecture](https://raw.githubusercontent.com/fevziomurtekin/hackernewsapp/master/screenshot/mvvm.png)
 
 ## API
-Used newsapi.org. newsapi.org API provides a RESTful API. [Link](https://newsapi.org/)
+Used Moviedb API provides a RESTful API. [Link](https://developers.themoviedb.org/3)
